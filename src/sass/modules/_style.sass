@@ -5,27 +5,57 @@
     font-family: "Varela Round"
 
 body
-    background-color: $green
     min-height: 100vh
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
+    background-image: url(../img/pexels-googledeepmind-17485657.jpg)
+    background-size: center
+    background-position: contain
+    background-repeat: no-repeat
+    height: 100vh
+
 
 .contenair
-    width: 400px
-    height: 250px
+    width: 450px
+    height: 450px
     background-color: white
     border-radius: 10px
-    padding: 25px
-    box-shadow: 20px 30px 10px rgba(0,0 , 0, 0.1)
+    padding: 35px
+    box-shadow: 5 30px 10px rgba(0,0 , 0, 0.1)
     margin-top: 10px
    
+h1 
+    font-size: 48px
+    font-weight: bold
+    background: linear-gradient(90deg, #f75fff, #6a3ad9, #4343dd)
+    background-size: 300% 300%
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    animation: gradient-animation 3s ease infinite
+    margin-bottom: 15%
+
+@keyframes gradient-animation 
+    0% 
+        background-position: 0% 50%
+    
+    50% 
+        background-position: 100% 50%
+    
+    100% 
+        background-position: 0% 50%
+ 
+
+
 .startGame
     display: grid
     gap: 25px
     grid-template-columns: repeat(4, 100px)
     grid-template-rows: repeat(4, 100px) 
+
     
 .starGame .card
     font-size: 1rem
@@ -35,6 +65,7 @@ body
     text-align: center
     cursor: pointer
     font-size: 1rem
+
     
 
 .card div
@@ -48,6 +79,7 @@ body
     backface-visibility: hidden
     box-shadow: 0 3px 10px rgba(0,0 , 0, 0.1)
     position: absolute
+
   
 
 .startGame button
@@ -61,7 +93,7 @@ body
     color: black
     background-color: $green
     margin-left: 90%
-    margin-top: 5%
+    margin-top: 55%
 
 
 .front
