@@ -11930,23 +11930,16 @@ h1, .h1 {
   position: absolute;
 }
 
-.startGame button {
-  cursor: pointer;
-  height: 60px;
-  width: 180px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  color: black;
-  background-color: #5fd6f4;
-  margin-left: 90%;
-  margin-top: 55%;
-}
-
 .front {
   text-align: center;
   color: #173404;
+}
+
+i {
+  font-size: 4rem;
+  display: block;
+  margin: -170px auto;
+  text-align: center;
 }
 
 .card.active:hover {
@@ -11974,8 +11967,52 @@ h1, .h1 {
   transform: rotateY(180deg);
 }
 
-.card.active:hover {
+.card.active:hover .front,
+.card.flip .front {
   transform: rotateY(180deg);
+}
+
+.card.active:hover .back,
+.card.flip .back {
+  transform: rotateY(0deg);
+}
+
+.icone {
+  font-size: 25px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.playground {
+  display: grid;
+  gap: 20px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#field {
+  height: 700px;
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btnReplay {
+  cursor: pointer;
+  height: 60px;
+  width: 180px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: #5fd6f4;
+  margin-left: 90%;
+  margin-top: 55%;
 }
 
 /*# sourceMappingURL=app.css.map */

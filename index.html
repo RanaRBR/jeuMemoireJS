@@ -13,18 +13,28 @@
 
 <body>
     <section>
-        <div class="contenair">
+        <div class="contenair" id="selectLevel">
+            
             <h1 class="text-center">Jeu de Mémoire</h1>
+            <div class="d-flex justify-content-around mt-5 mb-5 fw-bolder fs-6">
 
-            <div class="startGame">
+                <div class="">
+                    <p>Coups : </p>
+                </div>
+                <div>
+                    <p>Temps : </p>
+                </div>
+            </div>
 
-                <div class="card active" level="2" column="4" row="3">
+            <div class="startGame mb-5">
+
+                <div class="card active" level="2" column="4" row="3" id="startEasy">
                     <cards class="front fw-bold">FACILE</cards>
-                    <cards class="back fw-bold">4 x 3</cards>
+                    <cards class="back fw-bold">3 x 4</cards>
                 </div>
 
 
-                <div class="card active" level="2" column="4" row="4">
+                <div class="card active" level="2" column="4" row="4" id="startMedium">
                     <cards class="front fw-bold">MOYEN</cards>
                     <cards class="back fw-bold">4 x 4</cards>
                 </div>
@@ -33,12 +43,15 @@
                     <cards class="front fw-bold">DIFFICILE</cards>
                     <cards class="back fw-bold">6 x 4</cards>
                 </div>
-                <span></span>
-                <button class="fw-bold">NOUVELLE PARTIE</button>
-                <span></span>
             </div>
             <div class="playGround"></div>
+            <i class="bi bi-arrow-repeat icone" style="display: none"></i>
         </div>
+
+        <div id="field" class="hidden">
+            <button class="fw-bold" id="btnReplay" style="display: none;">NOUVELLE PARTIE</button>
+        </div>
+        
     </section>
 
 
