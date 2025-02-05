@@ -11853,11 +11853,9 @@ textarea.form-control-lg {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: url(../img/pexels-googledeepmind-17485657.jpg);
   background-size: center;
   background-position: contain;
@@ -11935,13 +11933,6 @@ h1, .h1 {
   color: #173404;
 }
 
-i {
-  font-size: 4rem;
-  display: block;
-  margin: -170px auto;
-  text-align: center;
-}
-
 .card.active:hover {
   border: 2px solid #e697e4;
 }
@@ -11999,6 +11990,8 @@ i {
   background-color: white;
   border-radius: 20px;
   box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
 }
 
 #btnReplay {
@@ -12021,6 +12014,7 @@ i {
   grid-template-rows: repeat(3, 1fr);
   padding-top: 25%;
   padding-left: 5%;
+  margin-bottom: 20%;
   gap: 20px;
   height: 80%;
   width: 80%;
@@ -12049,44 +12043,33 @@ i {
   align-items: center;
 }
 
-.carte:hover {
-  background-color: #e0e0e0;
-}
-
 .jeu2 {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  padding-left: 5%;
-  height: 100%;
-  width: 100%;
-  padding-top: 5%;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  top: 100px;
+  padding: 5%;
+  margin-top: 8%;
+  margin-left: 7%;
 }
 
-.carte2 i {
+.carte2 {
   height: 100px;
   width: 100px;
   background-color: #5fd6f4;
   border-radius: 20px;
   display: grid;
-}
-
-.carte2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  border-radius: 8px;
+  justify-content: center;
+  justify-items: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 40%;
+  padding-top: 20%;
 }
 .carte2 i {
   align-items: center;
-}
-
-.carte2:hover {
-  background-color: #e0e0e0;
+  font-size: 3rem;
 }
 
 .jeu3 {
@@ -12116,14 +12099,9 @@ i {
   height: 100px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 .carte3 i {
   align-items: center;
-}
-
-.carte3:hover {
-  background-color: #e0e0e0;
 }
 
 /*# sourceMappingURL=app.css.map */

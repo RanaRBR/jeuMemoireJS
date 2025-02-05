@@ -13,9 +13,9 @@
 
 <body>
     <section>
-       
+
         <div class="contenair" id="selectLevel">
-            <div class="d-flex justify-content-around fw-bolder fs-6 mx-1">
+            <div class="d-flex justify-content-around fw-bolder fs-6 mt-5..">
 
                 <div class="mx-5 ">
                     <p>Coups : </p>
@@ -24,7 +24,7 @@
                     <p>Temps : </p>
                 </div>
             </div>
-            
+
             <h1 class="text-center mt-5">Jeu de Mémoire</h1>
             <div class="startGame mb-5">
 
@@ -48,9 +48,18 @@
             <i class="bi bi-arrow-repeat icone" style="display: none"></i>
         </div>
 
-        
+
         <div id="field" class="hidden">
-            <button class="fw-bold" id="btnReplay" style="display: none;">NOUVELLE PARTIE</button>
+            <div class="d-flex justify-content-around fw-bolder fs-6 mt-5">
+
+                <div class="mt-5 ">
+                    <p>Coups : </p>
+                </div>
+                <div class="mt-5 ">
+                    <p>Temps : </p>
+                </div>
+            </div>
+        </div>
 
         <div class="jeu1" style="display: none">
             <div class="carte"><i class="bi bi-airplane-engines-fill"></i></div>
@@ -68,7 +77,8 @@
         </div>
 
 
-        <div class="jeu2" style="display: none">
+        <div class="jeu2" style="display: none;">
+
             <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
             <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
             <div class="carte2"><i class="bi bi-arrow-through-heart-fill"></i></div>
@@ -88,7 +98,7 @@
         </div>
 
 
-        
+
         <div class="jeu3" style="display: none">
             <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
             <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
@@ -117,9 +127,13 @@
         </div>
 
 
+        <button class="fw-bold" id="btnReplay" style="display: none;">NOUVELLE PARTIE</button>
+
+
+
 
         </div>
-        
+
     </section>
 
 
