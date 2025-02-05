@@ -1,64 +1,77 @@
-//PASSAGE D'UN ECRAN A UN AUTRE
 
-let levelCards = document.querySelectorAll(".startGame .card");
-let btnReplay = document.querySelector("#btnReplay");
-let home = document.getElementById("selectLevel");
-let field = document.getElementById("field");
+// // //BOUTONS 
 
-levelCards.forEach(card => {
-    card.addEventListener("click", function() {
-        home.classList.add("hidden"); 
-        field.classList.remove("hidden");
-    });
-});
+let replay = document.getElementById("btnReplay");
+let menuBouton = document.getElementById("btnMenu");
+let choixNiveau = document.getElementById("selectLevel");
+let ecranBis = document.querySelector(".champ");
 
-btnReplay.addEventListener("click", function() {
-    home.classList.remove("hidden"); 
-    field.classList.add("hidden");
-});
+replay.addEventListener("click", function(){
+    choixNiveau.classList.add('hidden');
+    ecranBis.classList.remove('hidden');
+})
 
-//CHOIX DU NIVEAU
+replay.addEventListener("click", function(){
+    choixNiveau.classList.remove('hidden');
+    ecranBis.classList.add('hidden');
+})
 
-let startEasy = document.getElementById('startEasy');
-let startMedium = document.getElementById('startMedium');
-let jeu1 = document.querySelector('.jeu1');
-let jeu2 = document.querySelector('.jeu2');
-let jeu3 = document.querySelector('.jeu3');
 
-function startGame(level) {
-    document.getElementById('selectLevel').style.display = 'none';
-    field.classList.remove('hidden');
-    
-    jeu1.style.display = 'none';
-    jeu2.style.display = 'none';
-    jeu3.style.display = 'none';
+// // let btnMenu = document.getElementById("btnMenu");
+// // let btnPrincipal = document.getElementById("btnReplay")
 
-    if (level === 'easy') {
-        jeu1.style.display = 'grid'; 
-    } else if (level === 'medium') {
-        jeu2.style.display = 'grid'; 
-    } else if (level === 'hard') {
-        jeu3.style.display = 'grid'; 
+// // // Événement pour le bouton "MENU PRINCIPAL"
+// // btnMenu.addEventListener("click", function() {
+
+// // });
+
+// // //CHOIX DU NIVEAU
+
+document.addEventListener('DOMContentLoaded', () => {
+    let easyButton = document.getElementById('startEasy');
+    let mediumButton = document.getElementById('startMedium');
+    let difficultButton = document.getElementById('startDifficult');
+
+    let jeux = {
+        easy: document.querySelector('.jeu1'),
+        medium: document.querySelector('.jeu2'),
+        difficult: document.querySelector('.jeu3')
+    };
+
+    let selectLevelContainer = document.getElementById('selectLevel');
+    let fieldContainer = document.getElementById('field');
+
+    function showGame(level) {
+        selectLevelContainer.style.display = 'none';
+        fieldContainer.classList.remove('hidden');
+        
+        Object.values(jeux).forEach(jeu => {
+            jeu.style.display = 'none';
+        });
+
+        jeux[level].style.display = 'grid'; 
     }
-}
 
-startEasy.addEventListener('click', function() {
-    startGame('easy');
+    easyButton.addEventListener('click', () => {
+        showGame('easy');
+        resetGameStats();
+    });
+    mediumButton.addEventListener('click', () => {
+        showGame('medium');
+        resetGameStats();
+    });
+    difficultButton.addEventListener('click', () => {
+        showGame('difficult');
+        resetGameStats();
+    });
+
+    function resetGameStats() {
+        document.getElementById('coups').textContent = '0';
+        document.getElementById('temps').textContent = '0';
+        document.getElementById('coupsField').textContent = '0';
+        document.getElementById('tempsField').textContent = '0';
+    }
 });
 
-startMedium.addEventListener('click', function() {
-    startGame('medium');
-});
-
-let startDifficult = document.querySelector('.card.active:not(#startEasy):not(#startMedium)');
-startDifficult.addEventListener('click', function() {
-    startGame('hard');
-});
-
-btnReplay.addEventListener('click', function() {
-    field.classList.add('hidden');
-    document.getElementById('selectLevel').style.display = 'block';
-});
-
-//CHOIX DES CARTES
+// // //CHOIX DES CARTES
 

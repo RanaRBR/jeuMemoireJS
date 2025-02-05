@@ -12004,8 +12004,22 @@ h1, .h1 {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   color: black;
   background-color: #5fd6f4;
-  margin-left: 90%;
-  margin-top: 55%;
+  position: relative;
+  z-index: 4;
+}
+
+#btnMenu {
+  cursor: pointer;
+  height: 60px;
+  width: 180px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: #5fd6f4;
+  position: relative;
+  z-index: 4;
 }
 
 .jeu1 {
@@ -12107,6 +12121,13 @@ h1, .h1 {
   font-size: 2.5rem;
   text-align: center;
   padding-top: 5%;
+}
+
+.new {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */

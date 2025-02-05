@@ -39,13 +39,14 @@
                     <cards class="back fw-bold">4 x 4</cards>
                 </div>
 
-                <div class="card active" level="2" column="6" row="4">
+                <div class="card active" level="2" column="6" row="4" id="startDifficult">
                     <cards class="front fw-bold">DIFFICILE</cards>
                     <cards class="back fw-bold">6 x 4</cards>
                 </div>
             </div>
             <div class="playGround"></div>
             <i class="bi bi-arrow-repeat icone" style="display: none"></i>
+
         </div>
 
 
@@ -61,79 +62,89 @@
             </div>
         </div>
 
-        <div class="jeu1" style="display: none">
-            <div class="carte"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte"><i class="bi bi-book-fill"></i></div>
-            <div class="carte"><i class="bi bi-book-fill"></i></div>
-            <div class="carte"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte"><i class="bi bi-brightness-high-fill"></i></div>
-            <div class="carte"><i class="bi bi-brightness-high-fill"></i></div>
+        <div class=" champ">
+            <div class="jeu1" style="display: none">
+                <div class="carte"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte"><i class="bi bi-book-fill"></i></div>
+                <div class="carte"><i class="bi bi-book-fill"></i></div>
+                <div class="carte"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="carte"><i class="bi bi-brightness-high-fill"></i></div>
+            </div>
+            <div id="deuxBoutons" class="hidden">
+                <button class="fw-bold" id="btnReplay">NOUVELLE PARTIE</button>
+                <button class="fw-bold" id="btnMenu">MENU PRINCIPAL</button>
+            </div>
+        </div>
+
+        <div class="champ">
+            <div class="jeu2" style="display: none;">
+
+                <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte2"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte2"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte2"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte2"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte2"><i class="bi bi-book-fill"></i></div>
+                <div class="carte2"><i class="bi bi-book-fill"></i></div>
+                <div class="carte2"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte2"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte2"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="carte2"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="carte2"><i class="bi bi-camera2"></i></i></div>
+                <div class="carte2"><i class="bi bi-camera2"></i></i></div>
+                <div class="carte2"><i class="bi bi-dice-5-fill"></i></div>
+                <div class="carte2"><i class="bi bi-dice-5-fill"></i></div>
+            </div>
+            <div id="deuxBoutons" class="hidden">
+                <button class="fw-bold" id="btnReplay">NOUVELLE PARTIE</button>
+                <button class="fw-bold" id="btnMenu">MENU PRINCIPAL</button>
+            </div>
         </div>
 
 
-        <div class="jeu2" style="display: none;">
+        <div class="champ">
+            <div class="jeu3" style="display: none">
 
-            <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte2"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte2"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte2"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte2"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte2"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte2"><i class="bi bi-book-fill"></i></div>
-            <div class="carte2"><i class="bi bi-book-fill"></i></div>
-            <div class="carte2"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte2"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte2"><i class="bi bi-brightness-high-fill"></i></div>
-            <div class="carte2"><i class="bi bi-brightness-high-fill"></i></div>
-            <div class="carte2"><i class="bi bi-camera2"></i></i></div>
-            <div class="carte2"><i class="bi bi-camera2"></i></i></div>
-            <div class="carte2"><i class="bi bi-dice-5-fill"></i></div>
-            <div class="carte2"><i class="bi bi-dice-5-fill"></i></div>
+                <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
+                <div class="carte3"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte3"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                <div class="carte3"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte3"><i class="bi bi-bell-fill"></i></div>
+                <div class="carte3"><i class="bi bi-book-fill"></i></div>
+                <div class="carte3"><i class="bi bi-book-fill"></i></div>
+                <div class="carte3"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte3"><i class="bi bi-binoculars-fill"></i></div>
+                <div class="carte3"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="carte3"><i class="bi bi-brightness-high-fill"></i></div>
+                <div class="carte3"><i class="bi bi-music-note-list"></i></i></i></div>
+                <div class="carte3"><i class="bi bi-music-note-list"></i></i></i></div>
+                <div class="carte3"><i class="bi bi-dice-5-fill"></i></div>
+                <div class="carte3"><i class="bi bi-dice-5-fill"></i></div>
+                <div class="carte3"><i class="bi bi-flower1"></i></i></div>
+                <div class="carte3"><i class="bi bi-flower1"></i></i></div>
+                <div class="carte3"><i class="bi bi-gem"></i></i></div>
+                <div class="carte3"><i class="bi bi-gem"></i></i></div>
+                <div class="carte3"><i class="bi bi-house-fill"></i></i></div>
+                <div class="carte3"><i class="bi bi-house-fill"></i></i></div>
+                <div class="carte3"><i class="bi bi-umbrella-fill"></i></i></div>
+                <div class="carte3"><i class="bi bi-umbrella-fill"></i></i></div>
+            </div>
+
+            <div id="deuxBoutons" class="hidden">
+                <button class="fw-bold" id="btnReplay">NOUVELLE PARTIE</button>
+                <button class="fw-bold" id="btnMenu">MENU PRINCIPAL</button>
+            </div>
         </div>
-
-
-
-        <div class="jeu3" style="display: none">
-            <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte3"><i class="bi bi-airplane-engines-fill"></i></div>
-            <div class="carte3"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte3"><i class="bi bi-arrow-through-heart-fill"></i></div>
-            <div class="carte3"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte3"><i class="bi bi-bell-fill"></i></div>
-            <div class="carte3"><i class="bi bi-book-fill"></i></div>
-            <div class="carte3"><i class="bi bi-book-fill"></i></div>
-            <div class="carte3"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte3"><i class="bi bi-binoculars-fill"></i></div>
-            <div class="carte3"><i class="bi bi-brightness-high-fill"></i></div>
-            <div class="carte3"><i class="bi bi-brightness-high-fill"></i></div>
-            <div class="carte3"><i class="bi bi-music-note-list"></i></i></i></div>
-            <div class="carte3"><i class="bi bi-music-note-list"></i></i></i></div>
-            <div class="carte3"><i class="bi bi-dice-5-fill"></i></div>
-            <div class="carte3"><i class="bi bi-dice-5-fill"></i></div>
-            <div class="carte3"><i class="bi bi-flower1"></i></i></div>
-            <div class="carte3"><i class="bi bi-flower1"></i></i></div>
-            <div class="carte3"><i class="bi bi-gem"></i></i></div>
-            <div class="carte3"><i class="bi bi-gem"></i></i></div>
-            <div class="carte3"><i class="bi bi-house-fill"></i></i></div>
-            <div class="carte3"><i class="bi bi-house-fill"></i></i></div>
-            <div class="carte3"><i class="bi bi-umbrella-fill"></i></i></div>
-            <div class="carte3"><i class="bi bi-umbrella-fill"></i></i></div>
         </div>
-
-
-        <button class="fw-bold" id="btnReplay" style="display: none;">NOUVELLE PARTIE</button>
-
-
-
-
-        </div>
-
     </section>
 
 
