@@ -12012,17 +12012,17 @@ h1, .h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  gap: 35px;
+  position: relative;
+  z-index: 2;
+  top: 100px;
   padding-top: 25%;
-  padding-left: 5%;
-  margin-bottom: 20%;
-  gap: 20px;
-  height: 80%;
-  width: 80%;
+  margin-left: 5%;
 }
 
 .carte i {
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
   background-color: #5fd6f4;
   border-radius: 20px;
   display: grid;
@@ -12033,14 +12033,14 @@ h1, .h1 {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .carte i {
   align-items: center;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .jeu2 {
@@ -12074,18 +12074,20 @@ h1, .h1 {
 
 .jeu3 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  top: 100px;
   padding-top: 25%;
-  padding-left: 5%;
-  gap: 5px;
-  height: 100%;
-  width: 100%;
+  margin-left: 5%;
+  padding-bottom: 20%;
 }
 
 .carte3 i {
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
   background-color: #5fd6f4;
   border-radius: 20px;
   margin-bottom: 20%;
@@ -12102,6 +12104,9 @@ h1, .h1 {
 }
 .carte3 i {
   align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 5%;
 }
 
 /*# sourceMappingURL=app.css.map */
